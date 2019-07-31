@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+  }
+  
+  /* Style the search field */
+  input[type=text] {
+	padding: 10px;
+	font-size: 17px;
+	border: 1px solid grey;
+	float: left;
+	width: 90%;
+  }
+  
+  /* Style the submit button */
+  button {
+	float: left;
+	width: 7%;
+	padding: 10px;
+	-moz-box-shadow:inset 0px 39px 0px -24px #9A2EFE;
+	-webkit-box-shadow:inset 0px 39px 0px -24px #9A2EFE;
+	box-shadow:inset 0px 39px 0px -24px #9A2EFE;
+	background-color:#9A2EFE;
+	color: white;
+	font-size: 17px;
+	border: 1px solid grey;
+	border-left: none; /* Prevent double borders */
+	cursor: pointer;
+  }
+  
+  button:hover {
+	background: #9A2EFE;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+
+  .github-title {
+	font-family: Georgia, serif;
+	font-size: 51px;
+	letter-spacing: 0.8px;
+	word-spacing: 1px;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+  }
+
+  .github-title .cursive {
+	  font-style: oblique
+  }
