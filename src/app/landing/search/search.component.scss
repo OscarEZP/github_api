@@ -16,10 +16,10 @@
 	float: left;
 	width: 7%;
 	padding: 10px;
-	-moz-box-shadow:inset 0px 39px 0px -24px #9A2EFE;
-	-webkit-box-shadow:inset 0px 39px 0px -24px #9A2EFE;
-	box-shadow:inset 0px 39px 0px -24px #9A2EFE;
-	background-color:#9A2EFE;
+	-moz-box-shadow:inset 0px 39px 0px -24px #ac53f2;
+	-webkit-box-shadow:inset 0px 39px 0px -24px #ac53f2;
+	box-shadow:inset 0px 39px 0px -24px #ac53f2;
+	background-color:#ac53f2;
 	color: white;
 	font-size: 17px;
 	border: 1px solid grey;
@@ -28,7 +28,7 @@
   }
   
   button:hover {
-	background: #9A2EFE;
+	background: #ac53f2;
   }
   
   /* Clear floats */
@@ -36,21 +36,4 @@
 	content: "";
 	clear: both;
 	display: table;
-  }
-
-  .github-title {
-	font-family: Georgia, serif;
-	font-size: 51px;
-	letter-spacing: 0.8px;
-	word-spacing: 1px;
-	color: #000000;
-	font-weight: normal;
-	text-decoration: none;
-	font-style: normal;
-	font-variant: normal;
-	text-transform: none;
-  }
-
-  .github-title .cursive {
-	  font-style: oblique
   }

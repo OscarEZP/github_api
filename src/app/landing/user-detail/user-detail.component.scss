@@ -1,0 +1,28 @@
+.title, .subtitle {
+    font-family: Georgia, serif;
+    letter-spacing: 2.2px;
+    word-spacing: -0.6px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.name {
+    font-size: 30px;
+    font-style: italic;
+}
+
+.nickname {
+    font-size: 21px;
+    font-style: italic;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.avatar {
+  width: 280px;
+  height: 280px;
+  border-radius: 2px;
+  box-shadow: 0 0 4px NaNpx rgba(0, 0, 0, 0.4);
+}
