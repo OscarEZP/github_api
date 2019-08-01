@@ -6,25 +6,26 @@
   input[type=text] {
 	padding: 10px;
 	font-size: 17px;
-	border: 1px solid grey;
 	float: left;
-	width: 90%;
+	width: 85%;
   }
   
   /* Style the submit button */
   button {
 	float: left;
-	width: 7%;
-	padding: 10px;
+	width: 100px;
+	height: 47px;
 	-moz-box-shadow:inset 0px 39px 0px -24px #ac53f2;
 	-webkit-box-shadow:inset 0px 39px 0px -24px #ac53f2;
 	box-shadow:inset 0px 39px 0px -24px #ac53f2;
 	background-color:#ac53f2;
 	color: white;
 	font-size: 17px;
-	border: 1px solid grey;
+	border-radius: 2px;
 	border-left: none; /* Prevent double borders */
 	cursor: pointer;
+	position: relative;
+	bottom: 2px;
   }
   
   button:hover {
@@ -37,3 +38,8 @@
 	clear: both;
 	display: table;
   }
+
+	.searchicon {
+		width: 30px;
+		height: 30px;
+	}
