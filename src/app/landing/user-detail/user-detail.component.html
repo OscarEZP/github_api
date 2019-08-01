@@ -1,25 +1,25 @@
-<div class="container mt-2">
+<div class="container mt-2" *ngIf="user">
   <div class="row">
     <div class="col-12">
-      <img src="https://avatars2.githubusercontent.com/u/13080681?s=460&v=4" alt="image profile" class="avatar">
+      <img src="{{user.avatar_url}}" alt="image profile" class="avatar">
     </div>
-    <div class="col-12">
-      <span class="title name">Oscar Zambrano</span>
+    <div class="col-12" *ngIf="user.name">
+      <span class="title name">{{user.name}}</span>
     </div>
-    <div class="col-12">
-      <span class="title nickname">oscarEZP</span>
+    <div class="col-12" *ngIf="user.login">
+      <span class="title nickname">{{user.login}}</span>
     </div>
-    <div class="col-12 mt-2">
-      <img class="icon" src="../../../assets/icons/organization icon.svg" alt="organizationIcon"> <span class="title description"> Biografia</span>
+    <div class="col-12 mt-2" *ngIf="user.company">
+      <img class="icon" src="../../../assets/icons/organization icon.svg" alt="organizationIcon"> <span class="title description"> {{user.company}}</span>
     </div>
-    <div class="col-12 mt-1">
-      <img class="icon" src="../../../assets/icons/location icon.svg" alt="locationIcon"><span class="title description"> Eamil</span>
+    <div class="col-12 mt-1" *ngIf="user.email">
+      <img class="icon" src="../../../assets/icons/location icon.svg" alt="locationIcon"><span class="title description"> {{user.email}}</span>
     </div>
-    <div class="col-12 mt-1">
-        <img class="icon" src="../../../assets/icons/repositorie icon.svg" alt="reposIcon"><span class="title description"> Repositorios</span>
+    <div class="col-12 mt-1" *ngIf="user.public_repos">
+        <img class="icon" src="../../../assets/icons/repositorie icon.svg" alt="reposIcon"><span class="title description"> {{user.public_repos}}</span>
     </div>
-    <div class="col-12 mt-1">
-        <img class="icon" src="../../../assets/icons/followers icon.svg" alt="folowersIcon"><span class="title description"> Numero de seguidores</span>
+    <div class="col-12 mt-1" *ngIf="user.followers">
+        <img class="icon" src="../../../assets/icons/followers icon.svg" alt="folowersIcon"><span class="title description"> {{user.followers}}</span>
     </div>
   </div>
 </div>

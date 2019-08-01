@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { SearchService } from '../../services/search.service';
 
 @Component({
@@ -8,6 +8,7 @@ import { SearchService } from '../../services/search.service';
 })
 export class SearchComponent implements OnInit {
   inputUser: string;
+  @Output() outputSearchUser = new EventEmitter();
   constructor(private searchService: SearchService) { }
 
   ngOnInit() {
@@ -16,7 +17,7 @@ export class SearchComponent implements OnInit {
   searchUser(user: string) {
     this.searchService.getSearchUser(user)
       .subscribe(response => {
-        console.log(response, 'respuesta');
+        this.outputSearchUser.emit(response);
       }, error => {
         console.log(error, 'error');
       });

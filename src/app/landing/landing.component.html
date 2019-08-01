@@ -3,9 +3,9 @@
     <strong>Github </strong> <span class="cursive">Search</span>
   </div>
   <div class="col-8 mt-3">
-      <app-search></app-search>
+      <app-search (outputSearchUser)="userFound($event)"></app-search>
   </div>
   <div class="col-12 mt-2">
-    <app-user-detail></app-user-detail>
+    <app-user-detail [user]="user"></app-user-detail>
   </div>
 </div>

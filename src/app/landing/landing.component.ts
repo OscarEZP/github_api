@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing.component.sass']
 })
 export class LandingComponent implements OnInit {
-
+  public user;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  userFound($event) {
+    this.user = $event;
   }
 
 }
